@@ -1,0 +1,175 @@
+.companies-list-page {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 2rem;
+  padding: 2rem;
+  min-height: 100vh;
+  background-color: #F8FAFC;
+  flex-wrap: wrap;
+}
+
+.mobile-mockup {
+  width: 375px;
+  background: var(--white);
+  border-radius: 32px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  overflow: hidden;
+  border: 8px solid #F1F5F9;
+}
+
+.app-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.app-logo {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-weight: 600;
+  font-size: 1.1rem;
+  color: #1F2937;
+}
+
+.company-type-header h2 {
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+  color: #111827;
+}
+
+.company-type-header p {
+  font-size: 0.85rem;
+  color: #6B7280;
+  line-height: 1.4;
+  margin-bottom: 1.5rem;
+}
+
+.hero-graphic {
+  height: 140px;
+  border-radius: 16px;
+  margin-bottom: 1.5rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.service-hero {
+  background: linear-gradient(135deg, #4389F2, #8BB6F9, #E6F0FF);
+  /* Use placeholder for the illustration, we will just use a nice gradient that mimics the blueish background */
+}
+
+.product-hero {
+  background: linear-gradient(135deg, #1A938C, #61C5BA, #D8F2EF);
+  /* Placeholder for product background */
+}
+
+.companies-scroll-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  margin-bottom: 1.5rem;
+}
+
+.company-list-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  border-radius: 16px;
+  border: 1px solid #F3F4F6;
+  background: var(--white);
+  box-shadow: 0 2px 4px rgba(0,0,0,0.02);
+  transition: all 0.2s;
+}
+
+.company-list-item:hover {
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  transform: translateY(-2px);
+}
+
+.company-list-info {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.company-list-logo {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 0.8rem;
+  border-radius: 8px;
+  background: #F9FAFB;
+}
+
+.company-list-info h4 {
+  font-size: 1rem;
+  color: #111827;
+  margin-bottom: 0.2rem;
+}
+
+.company-list-info p {
+  font-size: 0.75rem;
+  color: #6B7280;
+}
+
+.check-circle {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  border: 1px solid #E5E7EB;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.action-footer {
+  margin-top: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.explore-btn {
+  border-radius: 12px;
+  padding: 1rem;
+  font-size: 1rem;
+  border: none;
+  color: white;
+  font-weight: 500;
+}
+
+.service-btn {
+  background: linear-gradient(90deg, #3B82F6, #10B981);
+}
+
+.product-btn {
+  background: linear-gradient(90deg, #0D9488, #84CC16);
+}
+
+.btn-text {
+  background: none;
+  border: none;
+  color: #6B7280;
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+
+/* Logo Specific Colors (Mocked) */
+.tcs-logo-text { color: #E53E3E; font-size: 1.2rem; font-weight: 800; letter-spacing: -1px; }
+.apple-logo-icon { font-size: 1.5rem; color: #000; }
+.google-logo-icon { font-size: 1.5rem; color: #4285F4; }
+.infosys { color: #0052CC; }
+.microsoft { color: #F25022; }
+.adobe { color: #FF0000; }
+.ibm { color: #0530AD; }

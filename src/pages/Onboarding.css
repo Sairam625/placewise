@@ -1,0 +1,164 @@
+.onboarding-container {
+  min-height: 100vh;
+  background: var(--bg-light);
+  display: flex;
+  flex-direction: column;
+}
+
+.onboarding-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem;
+}
+
+.onboarding-logo {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  font-weight: 600;
+  font-size: 1.25rem;
+  color: var(--text-dark);
+}
+
+.menu-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.onboarding-content {
+  flex: 1;
+  padding: 2rem 1.5rem;
+  max-width: 500px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.step-indicator {
+  color: var(--text-muted);
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+}
+
+.onboarding-title {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+  color: var(--text-dark);
+}
+
+.cards-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin-bottom: 3rem;
+}
+
+.selection-card {
+  position: relative;
+  border-radius: var(--radius-xl);
+  overflow: hidden;
+  background: var(--white);
+  box-shadow: var(--shadow-sm);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border: 2px solid transparent;
+  min-height: 160px;
+  display: flex;
+  flex-direction: column;
+}
+
+.selection-card:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-md);
+}
+
+.selection-card.selected {
+  border-color: var(--primary-blue);
+  box-shadow: 0 0 0 2px rgba(42, 95, 234, 0.1);
+}
+
+.card-image-container {
+  height: 120px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.card-illustration {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 15%;
+  opacity: 0.9;
+}
+
+.fresher-bg {
+  background: linear-gradient(135deg, #4A7DF0 0%, #8DAEFF 100%);
+}
+
+.experienced-bg {
+  background: linear-gradient(135deg, #3A6FE8 0%, #29A98C 100%);
+}
+
+.service-bg {
+  background: linear-gradient(135deg, #4A7DF0 0%, #8DAEFF 100%);
+}
+
+.product-bg {
+  background: linear-gradient(135deg, #29A98C 0%, #68D3AC 100%);
+}
+
+.card-content {
+  padding: 1.25rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: var(--white);
+  flex: 1;
+}
+
+.card-text h3 {
+  font-size: 1.1rem;
+  margin-bottom: 0.25rem;
+}
+
+.card-text p {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+}
+
+.check-icon {
+  background: white;
+  border-radius: 50%;
+}
+
+.onboarding-actions {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.action-btn {
+  width: 100%;
+  padding: 1rem;
+  font-size: 1.1rem;
+  border-radius: var(--radius-lg);
+}
+
+.text-btn {
+  background: none;
+  border: none;
+  color: var(--text-muted);
+  font-size: 0.95rem;
+  font-weight: 500;
+  cursor: pointer;
+  padding: 0.5rem;
+}
+
+.text-btn:hover {
+  color: var(--text-dark);
+}

@@ -1,0 +1,114 @@
+.admin-container {
+  display: flex;
+  min-height: 100vh;
+  background-color: #F9FAFB;
+  color: #1F2937;
+  font-family: 'Inter', sans-serif;
+}
+
+.admin-topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 2.5rem;
+  background: white;
+  border-bottom: 1px solid #E5E7EB;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.admin-logo {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #111827;
+}
+
+.logo-icon-premium {
+  width: 36px;
+  height: 36px;
+  background: linear-gradient(135deg, #8B5CF6 0%, #3B82F6 100%);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 800;
+  color: white;
+  box-shadow: 0 4px 20px rgba(139, 92, 246, 0.4);
+}
+
+.admin-content-area {
+  padding: 2.5rem;
+  flex-grow: 1;
+}
+
+.admin-header-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2.5rem;
+}
+
+.gradient-text {
+  background: linear-gradient(to right, #111827, #4B5563);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+  font-weight: 800;
+}
+
+.admin-subtitle {
+  color: #6B7280;
+  font-size: 0.95rem;
+}
+
+.btn-glow {
+  background: linear-gradient(135deg, #8B5CF6, #4F46E5);
+  border: none;
+  padding: 0.8rem 1.5rem;
+  border-radius: 12px;
+  color: white;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  cursor: pointer;
+  box-shadow: 0 4px 15px rgba(139, 92, 246, 0.3);
+  transition: all 0.3s;
+}
+
+.btn-glow:hover {
+  box-shadow: 0 6px 20px rgba(139, 92, 246, 0.5);
+  transform: translateY(-2px);
+}
+
+.glass-card {
+  background: white;
+  border: 1px solid #E5E7EB;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+  border-radius: 20px;
+  padding: 1.5rem;
+  transition: all 0.3s ease;
+}
+
+.glass-card:hover {
+  border-color: #D1D5DB;
+}
+
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.card-header h3 {
+  color: #111827;
+  font-size: 1.1rem;
+  font-weight: 600;
+}

@@ -1,0 +1,267 @@
+.company-prep-page {
+  padding: 2rem 4rem;
+  background-color: #FFFFFF;
+  min-height: 100vh;
+}
+
+.prep-section {
+  margin-bottom: 3rem;
+}
+
+.section-title {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.title-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-weight: bold;
+}
+
+.purple-bg { background-color: #8B5CF6; }
+.green-bg { background-color: #10B981; }
+
+.section-title h2 {
+  font-size: 1.1rem;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  color: #111827;
+  margin-bottom: 0.2rem;
+}
+
+.section-title p {
+  font-size: 0.85rem;
+  color: #6B7280;
+}
+
+.prep-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 1.5rem;
+}
+
+@media (max-width: 1400px) {
+  .prep-grid { grid-template-columns: repeat(4, 1fr); }
+}
+@media (max-width: 1100px) {
+  .prep-grid { grid-template-columns: repeat(3, 1fr); }
+}
+@media (max-width: 800px) {
+  .prep-grid { grid-template-columns: repeat(2, 1fr); }
+  .company-prep-page { padding: 1rem; }
+}
+@media (max-width: 500px) {
+  .prep-grid { grid-template-columns: 1fr; }
+}
+
+.prep-card {
+  border: 1px solid #E5E7EB;
+  border-radius: 16px;
+  padding: 1.25rem;
+  background: #FFFFFF;
+  display: flex;
+  flex-direction: column;
+  transition: all 0.2s ease;
+}
+
+.prep-card:hover {
+  box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+  transform: translateY(-2px);
+}
+
+.prep-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 1rem;
+}
+
+.prep-company-info {
+  display: flex;
+  gap: 0.75rem;
+  align-items: center;
+}
+
+.prep-company-logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.tcs-text { color: #E53E3E; font-size: 1.2rem; font-weight: 800; letter-spacing: -1px; }
+.apple-icon { color: #000; }
+.google-icon { color: #4285F4; }
+.infosys { color: #0052CC; }
+.microsoft { color: #F25022; }
+
+.prep-company-info h3 {
+  font-size: 1rem;
+  color: #111827;
+  margin-bottom: 0.1rem;
+}
+
+.prep-company-info p {
+  font-size: 0.7rem;
+  color: #6B7280;
+}
+
+.building-icon {
+  font-size: 2rem;
+  opacity: 0.8;
+}
+
+.total-rounds-badge {
+  display: inline-block;
+  padding: 0.25rem 0.75rem;
+  border-radius: 100px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  margin-bottom: 1.25rem;
+  width: fit-content;
+}
+
+.rounds-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+  flex-grow: 1;
+}
+
+.round-item {
+  display: flex;
+  gap: 0.75rem;
+  align-items: flex-start;
+}
+
+.round-number {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.7rem;
+  font-weight: bold;
+  color: white;
+  flex-shrink: 0;
+}
+
+.round-details h4 {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #111827;
+  margin-bottom: 0.1rem;
+}
+
+.round-details p {
+  font-size: 0.7rem;
+  color: #6B7280;
+}
+
+.practice-btn-container {
+  margin-top: auto;
+}
+
+.practice-link-btn {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.75rem;
+  border-radius: 8px;
+  border: 1px solid transparent;
+  background: transparent;
+  cursor: pointer;
+  transition: all 0.2s;
+  text-align: left;
+}
+
+.practice-link-btn span:first-of-type {
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+.practice-link-btn .sub {
+  font-size: 0.65rem;
+  display: none;
+}
+
+.practice-link-btn .arrow {
+  margin-left: auto;
+}
+
+/* Theme Colors */
+.blue-theme .total-rounds-badge { background-color: #E0E7FF; color: #4338CA; }
+.blue-theme .round-number { background-color: #3B82F6; }
+.blue-theme .practice-link-btn { background-color: #F0F9FF; color: #0284C7; border-color: #BAE6FD; }
+
+.red-theme .total-rounds-badge { background-color: #FEE2E2; color: #B91C1C; }
+.red-theme .round-number { background-color: #EF4444; }
+.red-theme .practice-link-btn { background-color: #FEF2F2; color: #DC2626; border-color: #FECACA; }
+
+.green-theme .total-rounds-badge { background-color: #D1FAE5; color: #047857; }
+.green-theme .round-number { background-color: #10B981; }
+.green-theme .practice-link-btn { background-color: #ECFDF5; color: #059669; border-color: #A7F3D0; }
+
+.purple-theme .total-rounds-badge { background-color: #F3E8FF; color: #7E22CE; }
+.purple-theme .round-number { background-color: #8B5CF6; }
+.purple-theme .practice-link-btn { background-color: #FAF5FF; color: #9333EA; border-color: #E9D5FF; }
+
+.orange-theme .total-rounds-badge { background-color: #FFEDD5; color: #C2410C; }
+.orange-theme .round-number { background-color: #F97316; }
+.orange-theme .practice-link-btn { background-color: #FFF7ED; color: #EA580C; border-color: #FED7AA; }
+
+.gray-theme .total-rounds-badge { background-color: #F3F4F6; color: #374151; }
+.gray-theme .round-number { background-color: #4B5563; }
+.gray-theme .practice-link-btn { background-color: #F9FAFB; color: #4B5563; border-color: #E5E7EB; }
+
+/* Practice Banner */
+.practice-banner {
+  background: linear-gradient(90deg, #FDF4FF, #F3E8FF);
+  border-radius: 16px;
+  padding: 1.5rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 3rem;
+}
+
+.banner-content {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.banner-content h3 {
+  font-size: 1.25rem;
+  color: #111827;
+  margin-bottom: 0.25rem;
+}
+
+.banner-content p {
+  color: #4B5563;
+  font-size: 0.9rem;
+}
+
+.explore-practice-btn {
+  background: #7C3AED;
+  color: white;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+  white-space: nowrap;
+}
+
+.explore-practice-btn:hover {
+  background: #6D28D9;
+}
